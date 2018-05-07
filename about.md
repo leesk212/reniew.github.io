@@ -1,9 +1,17 @@
 ---
 layout: page
-title: 
+title: About
 ---
 
+
+
+
+
+
 ## JungHyun Cho
+
+
+
 
 # Contact 
 
