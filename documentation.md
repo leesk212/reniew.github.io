@@ -153,7 +153,7 @@ Going forward, updating to a new version of Ed is as simple as changing the rele
 
 ## Jekyll
 
-Ed is a Jekyll theme. That means you will need some familiarity with Jekyll to take advantage of its full potential. While running a Jekyll site is a bit more involved than Wordpress and other similar tools, the payoff in the long term is worth the effort to learn it. If you are new to Jekyll, I recommend you take a look at ["How (and Why) to Generate a Static Website Using Jekyll"](http://chronicle.com/blogs/profhacker/jekyll1/60913) at ProfHacker, and the excellent [Jekyll documentation](http://jekyllrb.com/) to start getting a sense of how it works. 
+Ed is a Jekyll theme. That means you will need some familiarity with Jekyll to take advantage of its full potential. While running a Jekyll site is a bit more involved than Wordpress and other similar tools, the payoff in the long term is worth the effort to learn it. If you are new to Jekyll, I recommend you take a look at ["How (and Why) to Generate a Static Website Using Jekyll"](http://chronicle.com/blogs/profhacker/jekyll1/60913) at ProfHacker, Amanda Visconti's excellent [Building a static website with Jekyll and GitHub Pages](http://programminghistorian.org/lessons/building-static-sites-with-jekyll-github-pages) on *The Programming Historian* and [Jekyll's own documentation](http://jekyllrb.com/) to start getting a sense of how it works. 
 
 Once you have gone through these tutorials, you can get started using Ed by replacing the sample texts included in in the `_texts` folder in Ed with your own edited texts. Remember to always and only edit files in Ed using [a plain text editor](https://en.wikipedia.org/wiki/Text_editor), and *not* a word processor. I'm composing this file using a plain text editor called [Sublime Text](http://www.sublimetext.com/).  
 
@@ -205,7 +205,7 @@ To indent specific lines we take advantage of a feature in kramdown that allows 
 - {:.indent-6} Fallen cold and dead.
 ~~~
 
-The `-` at the beginning of each line indicates that these are lines. The `{:.indent-3}` is what we need to in order to indicate the indent value for that line. Values can range from 1-10. You can expand the range or adjust the values in the CSS stylesheet in the `public` folder.
+The `-` at the beginning of each line indicates that these are lines. The `{:.indent-3}` is what we need to in order to indicate the indent value for that line. Values can range from 1-10. You can expand the range or adjust the values in the Ed stylesheet (`_ed.scss`) in the `_sass` folder.
 
 The example from Raisin in the Sun shows us that we don't need much special markup for theater as long as we use CAPITAL LETTERS for speakers. Italics for directions are easy enough. Just use `*` around the words you want to italicize. 
 
@@ -292,7 +292,7 @@ Your editions are treated as [collections](https://jekyllrb.com/docs/collections
 
 You will notice that the homepage in particular has a `.html` file ending instead of a `.md` ending. All template files in Jekyll are HTML, and the index behaves as a template file. Although these files are mostly written in HTML, notice that they still contain YAML front matter and liquid tags. To edit the homepage replace the content on the file shipped with Ed, making sure that your changes to `index.html` are written in valid HTML. The same goes for the template files in the `_layouts` folder.
 
-Ed also comes with a search page, `search.html`. This page implements [elastic lunr](http://elasticlunr.com/), "a lightweight full-text search engine in Javascript for browser search and offline search." This simple search page can be useful if you have large collections of texts. If you don't, and don't feel the need, go ahead and delete it along with the `public/js` folder.
+Ed also comes with a search page, `search.html`. This page implements [elastic lunr](http://elasticlunr.com/), "a lightweight full-text search engine in Javascript for browser search and offline search." This simple search page can be useful if you have large collections of texts. If you don't, and don't feel the need, go ahead and delete it along with the `assets/js` folder.
 
 Besides the homepage and the search page, Ed ships with an About page, `about.md` and a documentation page, `documentation.md`, i.e. this page. As you can see, these are regular `.md` files. You can replace the contents of each file using normal kramdown syntax. This also applies to any new page you create, which you should remember to save with an `.md` extension. When editing the `bibliography.md` file, be careful not to replace the liquid tag that generates your bibliography, unless you don't want to have a bibliography at all.
 
@@ -395,7 +395,11 @@ Note that our jekyll-scholar starter kit comes ready for MLA style. To use Chica
 
 **Publishing your site on Github Pages with jekyll-scholar**
 
-If you install jekyll-scholar, or most other plugins in Jekyll, you will need a workaround to publish your site on Github Pages, which only runs in 'safe mode.' I've provided a slightly modified version of a `Rakefile` originally created by [Robert Rawlins](https://blog.sorryapp.com/blogging-with-jekyll/2014/01/31/using-jekyll-plugins-on-github-pages.html) that will help you accomplish this task. Once you are ready to publish, switch to your `gh-pages` branch and run the following command `rake ed:publish`.
+If you install jekyll-scholar, or most other plugins in Jekyll, you will need a workaround to publish your site on Github Pages, which only runs in 'safe mode.' I've provided a slightly modified version of a `Rakefile` originally created by [Robert Rawlins](https://blog.sorryapp.com/blogging-with-jekyll/2014/01/31/using-jekyll-plugins-on-github-pages.html) that will help you accomplish this task. Once you are ready to publish, switch to your `gh-pages` branch and run the following command:
+
+~~~ bash
+$ rake ed:publish
+~~~
 
 ---
 
@@ -410,6 +414,8 @@ If you install jekyll-scholar, or most other plugins in Jekyll, you will need a 
 - Ed includes metadata in the headers that makes it easier for users of Zotero, and other systems to grab bibliographic information for the site and individual texts. Our metadata functionality may not be enough to generate a full proper citation. Consider providing visible citation information in your about page or homepage.
 - Make sure to deepen your knowledge of the building blocks of Ed: Jekyll, YAML and Liquid. A great list of resources can be found in the blog "[Jekyll for Web Designers](http://jameswillweb.github.io/jekyll-for-designers/resources.html)".
 - Our base themes Poole/Lanyon allow for easily customization of the interface. You can, for example, switch the position of the sidebar, change the theme colors and overlay options. To learn more check out the [Lanyon documentation](https://github.com/poole/lanyon#themes), and make sure to try the green, `.theme-base-0b`, it's really nice.
+- You can change the look and feel of the site as a whole by changing the `color-scheme` in the `_config.yml` file. If you want to have more granularity, short of editing the `css`, you can change the variable values in the `assets/css/style.scss` file.
+- In the `optional` folder you will find a sample `xslt` to help you get started converting TEI to Ed. You will also find css for adding pop-up "balloons" or tooltips to your texts.
 
 ---
 
@@ -442,7 +448,9 @@ If you do decide to use the GitHub pages option, please make sure to read the [n
 
 To publish on GitHub pages, you must have a copy of the repository in GitHub. That means you also need an account there. Once you've created the repository that you will use, you must link your local repository to the one on GitHub. Notice that because you cloned the original source files from my repository, it will be linked to my repository (to which you don't have writing privileges) until you do this step. Instructions for changing the remote URL can be found [here](https://help.github.com/articles/changing-a-remote-s-url/).
 
-You also need to create a different git branch called `gh-pages` within your local repository for your site. This is the branch that will get published by GitHub. To create and use that branch use the following command:
+The usual way of doing it is to create a different git branch called `gh-pages` within your local repository for your site. This is a branch is published by GitHub by default. GitHub also gives you the option to select [any branch you want to publish](https://github.com/blog/2228-simpler-github-pages-publishing), including the master branch.
+
+In the following I use the gh-pages branch. To create and use that branch use the following command:
 
 ~~~ bash
 $ git checkout -b gh-pages
