@@ -1,9 +1,9 @@
 # Built with Jekyll 3.2.0
 
 # Setup
-title:               reniew's blog
+title:               reniew`s blog
 tagline:             'cs and deep learning'
-description:         'reniew\'s blog'
+description:         "reniew's blog"
 url:                 'http://reniew.github.io'
 baseurl:             
 encoding: utf-8
