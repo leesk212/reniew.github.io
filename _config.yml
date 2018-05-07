@@ -1,17 +1,17 @@
 # Built with Jekyll 3.2.0
 
 # Setup
-title:               Ed.
-tagline:             'a jekyll theme for minimal editions'
-description:         'Ed is a Jekyll theme designed for textual editors based on minimal computing principles, and focused on legibility and flexibility.'
+title:               reniew's blog
+tagline:             'cs and deep learning'
+description:         'reniew's blog'
 url:                 'http://reniew.github.io'
 baseurl:             
 
 # About/contact
 author:
-  name:              Alex Gil
-  url:               https://twitter.com/elotroalex
-  email:             colibri.alex@gmail.com
+  name:              Junghyun Cho
+  url:               https://github.com/reniew
+  email:             reniew1@nate.com
 
 # Permalinks
 
