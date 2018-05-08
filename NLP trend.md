@@ -1,3 +1,9 @@
+---
+layout: page
+title: NLP
+author: reniew
+---
+
 Recent Trends in Deep Learning Based Natural Laguage Process (2017)  
 \- 최신의 딥러닝 기반 자연어처리기법 최근 연구 동향
 
