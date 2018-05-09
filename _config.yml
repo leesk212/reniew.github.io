@@ -33,6 +33,15 @@ collections:
   texts:
     output: true
 
+# Navigation (2nd level links supported)
+nav:
+  Home:
+    - '/'
+  Contents:
+    - '/contents/'
+  About:
+    - '/about/'
+
 # Markdown specs
 markdown: kramdown
 
