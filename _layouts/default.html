@@ -48,7 +48,7 @@
         document.getElementById("main").innerHTML = content.replace(regex, "<mark>$1</mark>");
       }
 
-    // Toggle sidebar  
+    // Toggle sidebar
       (function(document) {
         var toggle = document.querySelector('.sidebar-toggle');
         var sidebar = document.querySelector('#sidebar');
@@ -84,4 +84,7 @@
    }(document, 'script', 'facebook-jssdk'));
 </script>
   </body>
+  {% if site.disqus_short_name %}
+  <script id="dsq-count-scr" src="//{{ site.disqus_short_name }}.disqus.com/count.js" async></script>
+   {% endif %}
 </html>
