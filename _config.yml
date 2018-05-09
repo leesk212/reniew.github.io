@@ -5,7 +5,7 @@ title:               reniew's blog
 tagline:             'cs and deep learning'
 description:         "reniew's blog"
 url:                 'http://reniew.github.io'
-baseurl:             
+baseurl:
 encoding: utf-8
 
 # About/contact
@@ -14,10 +14,13 @@ author:
   url:               https://github.com/reniew
   email:             reniew1@nate.com
 
+disqus_url: https://reniew.disqus.com/
+disqus_id: reniew
+
 # Permalinks
 
 # Color scheme. Options: red, orange, magenta, cyan, blue, brown
-color-scheme: 
+color-scheme:
 
 permalink: pretty
 permalink: /:title/
@@ -49,5 +52,3 @@ exclude:
 
 # Theme
 theme: "ed."
-
-
