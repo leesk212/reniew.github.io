@@ -1,7 +1,8 @@
 ---
-layout: page
-title: NLP
-author: reniew
+layout: post
+title:  "Recent trend in NLP"
+date:   2018-05-09 13:45:35 +0900
+categories: jekyll update
 ---
 
 Recent Trends in Deep Learning Based Natural Laguage Process (2017)  
