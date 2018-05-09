@@ -42,6 +42,19 @@ nav:
   About:
     - '/about/'
 
+# About/contact
+author:
+  name: reniew
+  description: <strong>JungHyun</strong>
+  gravatar: 0a638fc7996869b1b67fb90ccf77dcfe # md5 hash of your email address
+  contact:
+    #linkedin:  <hide>
+    github:    https://github.com/reniew
+    facebook:  https://www.facebook.com/people/%EC%A1%B0%EC%A4%91%ED%98%84/100001883067095
+    #twitter:  <hide>
+    #weibo:    <hide>
+    email:     mailto:reniew1@nate.com
+
 # Markdown specs
 markdown: kramdown
 
