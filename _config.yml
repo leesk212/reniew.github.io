@@ -3,10 +3,25 @@
 # Setup
 title:               reniew's blog
 tagline:             'cs and deep learning'
-description:         "reniew's blog"
-url:                 'http://reniew.github.io'
+description:         'cs and deep learning'
+url:                 http://reniew.github.io
 baseurl:
 encoding: utf-8
+
+# Site configurations
+gems:
+  - jekyll-paginate
+markdown: kramdown
+kramdown:
+  input: GFM
+excerpt_separator: "<!-- more -->"
+sass:
+  style: compressed
+  sass_dir: _scss
+paginate: 5
+paginate_path: '/contents/page:num'
+permalink: pretty
+version: 1.0.0
 
 # About/contact
 author:
@@ -46,7 +61,7 @@ nav:
 author:
   name: reniew
   description: <strong>JungHyun</strong>
-  gravatar: 0a638fc7996869b1b67fb90ccf77dcfe # md5 hash of your email address
+  gravatar: ACBBB7E6ECC45391C6D4D9953B5D27E7 # md5 hash of your email address
   contact:
     #linkedin:  <hide>
     github:    https://github.com/reniew
