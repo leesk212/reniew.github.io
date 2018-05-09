@@ -23,12 +23,6 @@ paginate_path: '/contents/page:num'
 permalink: pretty
 version: 1.0.0
 
-# About/contact
-author:
-  name:              Junghyun Cho
-  url:               https://github.com/reniew
-  email:             reniew1@nate.com
-
 disqus_url: 'https://reniew.disqus.com/'
 disqus_id: 'reniew'
 
