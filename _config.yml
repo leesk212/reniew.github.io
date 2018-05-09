@@ -23,9 +23,6 @@ paginate_path: '/contents/page:num'
 permalink: pretty
 version: 1.0.0
 
-disqus_url: 'https://reniew.disqus.com/'
-disqus_id: 'reniew'
-
 # Permalinks
 
 # Color scheme. Options: red, orange, magenta, cyan, blue, brown
@@ -83,3 +80,7 @@ exclude:
 
 # Theme
 theme: "ed."
+
+
+# Plugin
+disqus_short_name: 'reniew'
