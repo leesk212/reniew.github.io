@@ -25,7 +25,11 @@
             <a href="{{ site.baseurl }}/" title="Home" title="{{ site.title }}">
               <img class="masthead-logo" src="{{ site.baseurl }}{{ site.logo }}"/>
             </a>
-            <small>{{ site.tagline }}</small>
+            <h3 class="masthead-title">
+  <a href="{{ site.baseurl }}/" title="Home">{{ site.title | newline_to_br }}</a>
+  <br><small>{{ site.tagline }}</small>
+</h3>
+            <!--<small>{{ site.tagline }}</small>-->
 <!--            <img src="http://ratsgo.github.io/public/search.png" width="20" height="20" style="position:absolute; top:1.3rem; right:1.5rem" data-toggle="modal" data-target="#myModal">-->
           </h3>
         </div>
