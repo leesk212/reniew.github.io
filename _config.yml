@@ -45,6 +45,7 @@ nav:
     - '/'
   Contents:
     - '/contents/'
+    - { Categories: '/contents/categories/' }
   About:
     - '/about/'
 
