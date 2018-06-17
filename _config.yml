@@ -84,4 +84,5 @@ theme: "ed."
 
 
 # Plugins
+mathjax: true
 disqus_short_name: 'reniew'
