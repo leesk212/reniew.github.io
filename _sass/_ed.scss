@@ -114,12 +114,11 @@ a:focus {
 h1, h2, h3, h4, h5, h6 {
   font-family: $heading-font;
   margin-bottom: .5rem;
-  font-weight: 300;
+  font-weight: bold;
   color: $heading-color;
   letter-spacing: -.025rem;
   line-height: 1.25;
   text-rendering: optimizeLegibility;
-  font-weight: bold;
 }
 
 h1 {
