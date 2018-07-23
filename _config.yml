@@ -85,4 +85,5 @@ theme: "ed."
 
 # Plugins
 mathjax: true
+google_analytics_token: 'UA-122743068-1'
 disqus_short_name: 'reniew'
