@@ -9,16 +9,14 @@ title: Categories
     <a href="#{{ tag[0] | slugify }}" class="post-tag" style="margin-right: 0.1rem;">{{ tag[0] }}</a>
     {% endfor %}
       </div>-->
-  <hr>
-  <hr/>
-  <br><br/>
+
   <div class="tags-expo-section">
     {% for tag in site.categories %}
     <h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
     <ul class="tags-expo-posts">
       {% for post in tag[1] %}
         <h4><a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
-      <li style="margin-bottom: 1rem;">
+      <li style="margin-bottom: 0.7rem;">
         {{ post.title }}
       <small class="post-date">{{ post.date | date_to_string }}</small>
       </li>
