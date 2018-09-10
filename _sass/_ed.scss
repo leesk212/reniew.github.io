@@ -692,6 +692,13 @@ div.toc {
     margin: 0; /* reset browsers default margin styles*/
 }
 
+/* 가운데정렬 */
+
+.center {
+  display: block;
+  margin: auto;
+}
+
 /* To set line indentation for poetry wrap the line in a span, with a class="indent-x" attribute. The x is represents an rem (root em) value */
 
 .indent-1 {
