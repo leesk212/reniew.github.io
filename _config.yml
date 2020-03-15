@@ -5,7 +5,7 @@ title:               reniew's blog
 tagline:             'cs and deep learning'
 description:         'cs and deep learning'
 url:                 https://reniew.github.io
-baseurl: 
+baseurl: https://github.com/reniew/reniew.github.io/blob/master
 encoding: utf-8
 
 # Site configurations
